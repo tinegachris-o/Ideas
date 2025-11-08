@@ -8,7 +8,7 @@ Got you 😎 here’s a **short, clean portfolio-style README** — perfect for 
 A full-stack **MERN** project for sharing and exploring creative ideas.  
 Built with **React (Vite)**, **Express**, **MongoDB**, **Node.js**, and **TanStack Query** for powerful data fetching and caching.
 
-![Ideas App Screenshot](./ideas.png)
+![Ideas App Screenshot](ideas.png)
 
 
 ## ⚙️ Tech Stack
