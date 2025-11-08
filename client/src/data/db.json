@@ -1,0 +1,152 @@
+{
+  "ideas": [
+    {
+      "id": "1",
+      "title": "Airbnb for Garages",
+      "summary": "Rent out your garage for storage or parking.",
+      "description": "This platform allows homeowners to monetize unused garage space by offering it for short- or long-term storage, parking, or even micro-offices. Think Airbnb, but for underutilized residential garages. It could also provide insurance, keyless access, and a rating system for trust and safety.",
+      "tags": [
+        "real estate",
+        "marketplace",
+        "sharing economy"
+      ],
+      "createdAt": "2025-04-27T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "Local Farm Box Subscription",
+      "summary": "Weekly produce delivery from nearby farms.",
+      "description": "A subscription box service connecting local farmers with urban dwellers looking for fresh produce. Customers receive a curated box each week containing fruits, vegetables, and artisanal goods sourced directly from nearby growers. It encourages local commerce, healthy eating, and seasonal variety.",
+      "tags": [
+        "subscription",
+        "local",
+        "marketplace"
+      ],
+      "createdAt": "2025-04-28T14:30:00.000Z"
+    },
+    {
+      "id": "4",
+      "title": "Virtual Closet Organizer",
+      "summary": "Your wardrobe, digitized and AI-personalized.",
+      "description": "An app that lets users take pictures of their clothes and upload them into a virtual closet. The app uses AI to suggest daily outfits based on the weather, calendar events, and style preferences. Features might include travel packing lists, outfit tracking, and a sharing option for friends to browse each other's closets.",
+      "tags": [
+        "fashion",
+        "ai",
+        "productivity"
+      ],
+      "createdAt": "2025-04-25T16:45:00.000Z"
+    },
+    {
+      "id": "5",
+      "title": "Pet Sitter Marketplace",
+      "summary": "Book trusted sitters and walkers in your area.",
+      "description": "A two-sided platform where pet owners can find, book, and review local pet sitters and dog walkers. All providers go through background checks and can create profiles with availability, pricing, and services offered. Includes messaging, GPS walk tracking, and emergency contact sharing.",
+      "tags": [
+        "pets",
+        "marketplace",
+        "local"
+      ],
+      "createdAt": "2025-04-26T11:20:00.000Z"
+    },
+    {
+      "id": "6",
+      "title": "Remote Job Recommender",
+      "summary": "Smart job matches using your online presence.",
+      "description": "An AI-powered platform that analyzes your GitHub, LinkedIn, resume, and public portfolios to find remote jobs that align with your skills and goals. Users receive a daily or weekly feed of tailored listings, and the system learns from their clicks and applications to improve recommendations over time.",
+      "tags": [
+        "jobs",
+        "remote",
+        "ai"
+      ],
+      "createdAt": "2025-04-24T13:10:00.000Z"
+    },
+    {
+      "id": "970a",
+      "title": "Web devIdea",
+      "summary": "Creative and detail-oriented Web Developer with hands-on experience in full-stack development. Adept at transforming ideas into functional digital products using JavaScript, React, and Node.js. Combines analytical thinking with a solid grasp of traditional coding principles to create reliable and high-performing web apps. Passionate about continuous learning, teamwork, and building tech that makes a difference.",
+      "description": "\n\nA passionate Web Developer focused on building responsive, user-friendly, and efficient web applications. Skilled in crafting modern frontends using React and clean, scalable backends with Node.js and Express. Strong understanding of REST APIs, authentication, and database integration (MongoDB). Dedicated to writing clean, maintainable code and delivering seamless user experiences across devices.\n\n-",
+      "tags": [
+        "Full Stack Developer",
+        "Frontend Developer",
+        "Backend Developer",
+        "JavaScript",
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+        "REST API",
+        "HTML",
+        "CSS",
+        "Vite",
+        "Redux",
+        "Zustand",
+        "Cloudinary",
+        "JWT",
+        "Multer",
+        "Problem Solver",
+        "Team Player",
+        "Continuous Learner",
+        "Creative Thinker",
+        "Clean Code",
+        "UI/UX",
+        "Responsive Design",
+        "Performance Optimization",
+        "Version Control",
+        "Git",
+        "API Development",
+        "Tech Enthusiast",
+        "Software Engineer",
+        "Web App Developer",
+        "Open Source",
+        "MERN Stack",
+        "JavaScript Developer",
+        "Modern Web Development"
+      ],
+      "cretedAt": "2025-11-07T12:56:10.788Z"
+    },
+    {
+      "title": "Software Eng and CyberSecurity",
+      "summary": "Innovative and detail-oriented Software Engineer with hands-on experience in both frontend and backend development. Adept at turning ideas into fully functional products using JavaScript frameworks and RESTful APIs. Strong collaborator with a traditional approach to software craftsmanship — valuing clarity, structure, and maintainable code. Driven by curiosity, teamwork, and the desire to create technology that genuinely improves lives.",
+      "description": "\n\n🔐 Cybersecurity\nCybersecurity focuses on protecting computer systems, networks, and data from attacks, breaches, or unauthorized access. It involves detecting threats, preventing cybercrimes, and ensuring information stays safe and private.\n\n💻 Software Engineering\nSoftware engineering is the process of designing, building, testing, and maintaining software applications. It combines programming, problem-solving, and system design to create reliable and efficient tech solutions.Mostly used languges are Js,React,Mongodb\n\n-",
+      "tags": [
+        "Software Engineer",
+        "Full Stack Developer",
+        "Web Developer",
+        "JavaScript",
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+        "REST API",
+        "HTML",
+        "CSS",
+        "Vite",
+        "Redux",
+        "Zustand",
+        "Cloudinary",
+        "JWT",
+        "Multer",
+        "API Development",
+        "Git",
+        "Version Control",
+        "Problem Solver",
+        "Team Player",
+        "UI/UX",
+        "Clean Code",
+        "Performance Optimization",
+        "Agile Development",
+        "Continuous Learning",
+        "MERN Stack",
+        "Open Source",
+        "Modern Web Development",
+        "Scalable Systems",
+        "Software Design",
+        "System Architecture",
+        "Debugging",
+        "Testing",
+        "Deployment"
+      ],
+      "id": "30d9"
+    }
+  ]
+}
