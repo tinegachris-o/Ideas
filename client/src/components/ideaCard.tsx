@@ -20,7 +20,7 @@ const IdeaCard = ({
         <p className="text-gray-700 mt-2">{idea.summary}</p>
       </div>
 
-      <Link to="/ideas/$ideaId" params={{ ideaId: idea.id }}className={linkClasses}>
+      <Link to="/ideas/$ideaId" params={{ ideaId: idea._id }}className={linkClasses}>
         {button ? "View Idea" : "Read more →"}
       </Link>
     </div>
