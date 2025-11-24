@@ -1,8 +1,7 @@
 import User from "../models/User.js";
 import { generateToken } from "../utilis/generateToken.js";
-import { jwtVerify } from "jose";
 import { JWT_SECRET } from "../utilis/getJwtSecret.js";
-
+import { jwtVerify, SignJWT } from "jose";
 // ======================== REGISTER ========================
 export const createUser = async (req, res) => {
   try {
@@ -21,7 +20,7 @@ export const createUser = async (req, res) => {
     const user = await User.create({ name, email, password });
 
     const payload = { userId: user._id.toString() };
-    const accessToken = await generateToken(payload, "1hr");
+    const accessToken = await generateToken(payload, "1m");
     const refreshToken = await generateToken(payload, "30d");
 
     res
@@ -69,13 +68,14 @@ export const login = async (req, res) => {
     }
 
     const payload = { userId: user._id.toString() };
-    const accessToken = await generateToken(payload, "1hr");
+    const accessToken = await generateToken(payload, "1m");
     const refreshToken = await generateToken(payload, "30d");
 
     res
       .cookie("refreshToken", refreshToken, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
+        secure: process.env.NODE_ENV === "production", // true only in prod
+
         sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
         maxAge: 30 * 24 * 60 * 60 * 1000,
       })
@@ -96,16 +96,18 @@ export const login = async (req, res) => {
 };
 
 // ======================== REFRESH TOKEN ========================
-export const refreshToken = async (req, res) => {
+export const refreshToken = async (req, res, next) => {
   try {
     const token = req.cookies?.refreshToken;
     if (!token) {
       return res.status(401).json({ message: "No refresh token found" });
     }
 
-    const { payload } = await jwtVerify(token, JWT_SECRET);
-    const user = await User.findById(payload.userId);
+    // Decode & verify the token
+    const verified = await jwtVerify(token, JWT_SECRET);
+    const payload = verified.payload;
 
+    const user = await User.findById(payload.userId);
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
@@ -128,6 +130,7 @@ export const refreshToken = async (req, res) => {
     res.status(401).json({ message: "Invalid or expired refresh token" });
   }
 };
+
 
 // ======================== LOGOUT ========================
 export const logout = async (req, res) => {

@@ -62,7 +62,9 @@ const Header = () => {
             Register
           </Link></>):(
             <>
-            <span className="text-gray-700 font-medium px-2">
+            <span className="text-gray-700 
+            hidden sm:block
+            font-medium px-2">
               welcome ,{user.name}
             </span>
             <button 

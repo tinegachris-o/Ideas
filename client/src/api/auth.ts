@@ -40,3 +40,12 @@ export const logoutUser=async()=>{
      throw new Error(message);
   }
 }
+export const refreshAccessToken = async () => {
+  try {
+    const res = await api.post("/auth/refresh");
+    return res.data;
+  } catch (error: any) {
+    const message = error.response?.data?.message || "Failed to refreshToken";
+    throw new Error(message);
+  }
+};
