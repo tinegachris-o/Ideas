@@ -20,9 +20,8 @@ connectDB();
 app.use(cookieParser());
 const allowedOrigins = [
   "https://ideas-git-main-tinegas-projects.vercel.app",
-  "https://ideas-sooty.vercel.app/",
-  "http://localhost:5174",
-
+  "https://ideas-sooty.vercel.app",
+  "http://localhost:5174"
 ];
 
 app.use(cors({
